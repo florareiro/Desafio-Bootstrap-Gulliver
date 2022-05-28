@@ -11,6 +11,8 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+
+
 .minha-nav {
   margin: 0 100px;
   background-color: white;
@@ -252,4 +254,47 @@ li {
   display: flex;
   justify-content: flex-end;
   padding-right: 24px;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #0A5C01;
+  color: white;
+
+
+}
+
+footer h3 {
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.rodape {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-rodape {
+  display: flex;
+  align-items: center;
+  margin: 20px 30px;
+
+}
+
+.icon-footer {
+  width: 30px;
+  margin: 0 3px;
+}
+
+.logo-rodape img {
+  width: 60px;
+}
+
+.redes-sociais {
+  margin: 20px 30px;
 }
