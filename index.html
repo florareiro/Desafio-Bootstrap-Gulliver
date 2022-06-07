@@ -17,15 +17,18 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="./imagens/logo.png">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  />
     <title>Guliver Traveller</title>
   </head>
   <body>
     
-    <nav class="navbar navbar-expand-lg navbar-light  minha-nav">
-      <div class="barra-navegacao">
-      <div class="caixa menu-hamburguer">
+    <nav class="navbar navbar-expand-lg navbar-light  minha-nav ">
+      <div class=" menu-hamburguer">
         <button
-          class="navbar-toggler "
+          class="navbar-toggler col-sm-12 col-md-12"
           type="button"
           data-toggle="collapse"
           data-target="#conteudoNavbarSuportado"
@@ -36,83 +39,81 @@
           <span class="navbar-toggler-icon"></span>
         </button>
       </div> 
-
-
-    
-      <div class="caixa logo">
+      <div class="caixa">
         <div>
-        <img src="./imagens/logo.png" class="imagem-logo" alt="">
+        <img src="./imagens/" class="imagem-logo" alt="">
         </div>
-      <a class="navbar-brand titulo-logo" href="#"> Guliver <br>Traveller</br></a>
+        <a class="navbar-brand titulo-logo" href="#"> Guliver <br>Traveller</br></a>
       </div> 
    
+      <div class="idioma"> 
+          <li class="nav-item dropdown">
+            <div class="borda">
+            <img src="./imagens/Globe.png" class="globo" alt="">
+            <a
+              class="nav-link dropdown-toggle "
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              pt-br
+            </a>
+          
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Inglês</a>
+              <a class="dropdown-item" href="#">Espanhol</a>
+            </div>
+          </li>
+       </div>
 
-   
-    
-    <div class="caixa idioma"> 
-      <li class="nav-item dropdown">
-        <div class="borda">
-        <img src="./imagens/Globe.png" class="globo" alt="">
-        <a
-          class="nav-link dropdown-toggle "
-          href="#"
-          id="navbarDropdown"
-          role="button"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          pt-br
-        </a>
-      
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Inglês</a>
-          <a class="dropdown-item" href="#">Espanhol</a>
-        </div>
-      </li>
-    </div>
-
-       <div class="collapse navbar-collapse caixa caixa-menu " id="conteudoNavbarSuportado"> 
-        <ul class="navbar-nav mr-auto menu-nav">
-          <li class="nav-item active">
+       <div class="collapse navbar-collapse menu-nav" id="conteudoNavbarSuportado"> 
+        <ul class="navbar-nav ">
+            <li class="nav-item active">
             <a class="nav-link" href="#"S
               >Dicas <span class="sr-only"></span></a
             >
-          </li>
-          <li class="nav-item active">
+            </li>
+            <li class="nav-item active">
             <a class="nav-link" href="#"
               >Roteiros <span class="sr-only">)</span></a
             >
-          </li>
-          <li class="nav-item active">
+            </li>
+            <li class="nav-item active">
             <a class="nav-link" href="#"
               >Blog <span class="sr-only"></span></a
             >
-          </li>
+            </li>
           
         </ul>
       </div>
     </div>
     </nav>
+    <!-- FIM BARRA DE NAVEGAÇÃO -->
 
-
-    <div class="container-fluid  caixa-servico  ">
+    <div class="nav-bar">
       
-          <ul class="lista-servico">
-              <li> <a class="item-lista" href="#"> <img src="./imagens/America.png"  class="icone" alt=""> Destino </a></li>
-              <li> <a class="item-lista" href="#"> <img src="./imagens/Bed.png"  class="icone" alt=""> Hospedagem </a></li>
-              <li> <a class="item-lista" href="#"> <img src="./imagens/Airplane Mode On.png"  class="icone" alt=""> Passagens </a></li>
-              <li> <a class="item-lista" href="#"> <img src="./imagens/Car.png"  class="icone" alt=""> Alugue seu carro </a></li>
-              <li><a class="item-lista" href="#"> <img src="./imagens/Tree.png"  class="icone" alt=""> Parques  </a></li>
-              <li> <a class="item-lista" href="#"> <img src="./imagens/teatro.png" class="icone"  alt=""> Cultura </a></li>
-              <li> <a class="item-lista" href="#"> <img src="./imagens/Moon Symbol.png"  class="icone" alt=""> Vida Noturna </a></li>
-              <li> <a class="item-lista" href="#"> <img src="./imagens/Restaurant.png" class="icone"  alt=""> Restaurantes </a></li>
+          <ul class="lista-servico row">
+              <li class="item-lista"> <a class="link-lista" col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3" href="#"> <img src="./imagens/America.png"  class="icone" alt=""> Destino </a></li>
+              <li class="item-lista"> <a class="link-lista" col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3" href="#"> <img src="./imagens/Bed.png"  class="icone" alt=""> Hospedagem </a></li>
+              <li class="item-lista"> <a class="link-lista" col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3" href="#"> <img src="./imagens/Airplane Mode On.png"  class="icone" alt=""> Passagens </a></li>
+              <li class="item-lista"> <a class="link-lista" col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3" href="#"> <img src="./imagens/Car.png"  class="icone" alt=""> Alugue seu carro </a></li>
+              <li class="item-lista item-2 dropdown dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="link-lista col-12 col-sm-12 col-md-12 col-lg-4 col-xl-3" href="#"> mais </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Alguma ação</a>
+                  <a class="dropdown-item" href="#">Outra ação</a>
+                  <a class="dropdown-item" href="#">Alguma coisa aqui</a>
+                </div>
+              </li>
+             
           </ul>
   </div>
 
   <!-- ParaOnde -->
-  <section class="paraOnde ">
-    <div class="container-fluid">
+  <section class="paraOnde">
       <div class="paraOnde__background">
         <div class="paraOnde__containerForLabel">
           <label class="paraOnde__label" for="paraOndeHome">
@@ -121,8 +122,138 @@
           </label>
         </div>
       </div>
-    </div>
   </section>
+
+
+
+  <section class="postBlog">
+      <div class="post-blog-img">
+        <div class="caixa-texto">
+          <h3>Conheça São Paulo</h3>
+          <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci doloremque natus assumenda ducimus, voluptate non totam ipsam, minus deleniti repellat a delectus odit quasi laudantium ipsum aliquid rerum asperiores quod.  
+          </p>
+          <a class="botao" href="#">Leia Mais</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="Hoteis">
+      <h3 class="titulo">Melhores Hoteis em São Paulo</h3>
+      <div class="row m-5"> 
+          <div class="col-12 col-md-12 col-lg-4 ">   
+            <div class="card card-caixa container-fluid">
+                  <img class="card-img-top img-card img-fluid" src="https://www.bluetree.com.br/uploads/galeria/hotel/4.Lobby.png" alt="Imagem de capa do card">
+                  <div class="card-body ">
+                    <h5 class="card-title titulo-card">Blue Tree - Paulista</h5>
+                    <div class="hotel-avaliacao">
+                      <i class="fa-solid fa-star estrela"></i>
+                      <i class="fa-solid fa-star estrela"></i>
+                      <i class="fa-solid fa-star estrela"></i>
+                      <i class="fa-solid fa-star estrela"></i>
+                      <i class="fa-solid fa-star estrela-cinza"></i>
+                    </div>
+                    <h6 class="titulo-card py-3">R$ 200,00</h6>
+                   
+                    <a href="#" class="btn btn-card btn-dark">Visitar</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12  col-md-6 col-lg-4 ">   
+            <div class="card card-caixa container-fluid">
+                  <img class="card-img-top img-card img-fluid" src="https://lirp.cdn-website.com/da7e3151/dms3rep/multi/opt/1-bcb555e5-1920w.jpg" alt="Imagem de capa do card">
+                  <div class="card-body ">
+                    <h5 class="card-title titulo-card">Bourbon - Ibirapuera</h5>
+                    <div class="hotel-avaliacao">
+                      <i class="fa-solid fa-star estrela"></i>
+                      <i class="fa-solid fa-star estrela"></i>
+                      <i class="fa-solid fa-star estrela"></i>
+                      <i class="fa-solid fa-star estrela"></i>
+                      <i class="fa-solid fa-star estrela-cinza"></i>
+                    </div>
+                    <h6 class="titulo-card py-3">R$ 250,00</h6>
+                    <a href="#" class="btn btn-card btn-dark">Visitar</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12  col-md-6  col-lg-4"> 
+            <div class="card card-caixa container-fluid">
+                  <img class="card-img-top img-card img-fluid" src="https://static.wixstatic.com/media/f0f108_a604be740cfb4546b16d5ca4eae67844~mv2.jpg/v1/fill/w_980,h_551,al_c,q_85,usm_0.66_1.00_0.01/f0f108_a604be740cfb4546b16d5ca4eae67844~mv2.webp" alt="Imagem de capa do card">
+                  <div class="card-body ">
+                    <h5 class="card-title titulo-card">Renaissance São Paulo </h5>
+                    <div class="hotel-avaliacao">
+                      <i class="fa-solid fa-star estrela"></i>
+                      <i class="fa-solid fa-star estrela"></i>
+                      <i class="fa-solid fa-star estrela"></i>
+                      <i class="fa-solid fa-star estrela"></i>
+                      <i class="fa-solid fa-star estrela-cinza"></i>
+                    </div>
+                    <h6 class="titulo-card py-3">R$ 290,00</h6>
+                    <a href="#" class="btn btn-card btn-dark">Visitar</a>
+                  </div>
+              </div>
+          </div>   
+        </div>   
+     </section>
+
+     <!-- FIM HOTEIS -->
+     <section class="Restaurantes">
+      <h3 class="titulo">Melhores Restaurantes em São Paulo</h3>
+      <div class="row m-5"> 
+          <div class="col-12 col-md-12 col-lg-4 ">   
+            <div class="card card-caixa container-fluid">
+                  <img class="card-img-top img-card img-fluid" src="https://axwwgrkdco.cloudimg.io/v7/__gmpics__/4bd3c1c9c6364f6984db9105da4a58b6?width=1000">
+                  <div class="card-body ">
+                    <h5 class="card-title titulo-card">DOM</h5>
+                    <div class="hotel-avaliacao">
+                      <i class="fa-solid fa-star estrela"></i>
+                      <i class="fa-solid fa-star estrela"></i>
+                      <i class="fa-solid fa-star estrela"></i>
+                      <i class="fa-solid fa-star estrela"></i>
+                      <i class="fa-solid fa-star estrela-cinza"></i>
+                    </div>
+                    <h6 class="titulo-card py-3">$$ - Culinária Brasileira </h6>
+                    <a href="#" class="btn btn-card btn-dark">Visitar</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12  col-md-6 col-lg-4 ">   
+            <div class="card card-caixa container-fluid">
+                  <img class="card-img-top img-card img-fluid" src="https://spcity.com.br/wp-content/uploads/2017/11/figueira.jpg" alt="Imagem de capa do card">
+                  <div class="card-body ">
+                    <h5 class="card-title titulo-card">Figueira Rubayat</h5>
+                    <div class="hotel-avaliacao">
+                      <i class="fa-solid fa-star estrela"></i>
+                      <i class="fa-solid fa-star estrela"></i>
+                      <i class="fa-solid fa-star estrela"></i>
+                      <i class="fa-solid fa-star estrela"></i>
+                      <i class="fa-solid fa-star estrela-cinza"></i>
+                    </div>
+                    <h6 class="titulo-card py-3">$$ - Culinária Brasileira </h6>
+                    <a href="#" class="btn btn-card btn-dark">Visitar</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12  col-md-6  col-lg-4"> 
+            <div class="card card-caixa container-fluid">
+                  <img class="card-img-top img-card img-fluid" src="https://www.fasano.com.br/library/uploads/restaurants/images/KRmjSSdcgGfg20161011101317.jpg" alt="Imagem de capa do card" alt="Imagem de capa do card">
+                  <div class="card-body ">
+                    <h5 class="card-title titulo-card">Fasano </h5>
+                    <div class="hotel-avaliacao">
+                      <i class="fa-solid fa-star estrela"></i>
+                      <i class="fa-solid fa-star estrela"></i>
+                      <i class="fa-solid fa-star estrela"></i>
+                      <i class="fa-solid fa-star estrela"></i>
+                      <i class="fa-solid fa-star estrela-cinza"></i>
+                    </div>
+                    <h6 class="titulo-card py-3">$$ - Churrascaria </h6>
+                    <a href="#" class="btn btn-card btn-dark">Visitar</a>
+                  </div>
+              </div>
+          </div>   
+        </div>   
+     </section>
+
 
    <footer>
         <div class="rodape">
