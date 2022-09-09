@@ -39,13 +39,6 @@ if ('geolocation' in navigator) {
     map.setView([lat,lon], 12);   
    
 
-    // API RESTAURANTES
-    const key_restaurant = 'dc0b091820824302a18c4037fc870ce1';
-    const restaurant_api = `https://api.geoapify.com/v2/places?categories=catering&filter=circle:${lon},${lat},5000&bias=proximity:${lon},${lat}&limit=20&apiKey=${key_restaurant}`;
-    const response_restaurant = await fetch (restaurant_api);
-    const restaurant_json = await response_restaurant.json();
-    console.log(restaurant_json);
-  
   
   });
 
