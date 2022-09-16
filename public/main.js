@@ -30,7 +30,7 @@ if ('geolocation' in navigator) {
     
   // API HOSPEDAGEM
     const key_api = 'dc0b091820824302a18c4037fc870ce1';
-    const hospedagem_api = `https://api.geoapify.com/v2/places?categories=accommodation&filter=circle:${lon},${lat},5000&bias=proximity:${lon},${lat}&limit=20&apiKey=${key_api}`;
+    const hospedagem_api = `https://api.geoapify.com/v2/places?categories=accommodation&filter=circle:${lon},${lat},5000&bias=proximity:${lon},${lat}&limit=50&apiKey=${key_api}`;
     const response_hospedagem = await fetch (hospedagem_api);
     const hospedagem_json = await response_hospedagem.json();
  
