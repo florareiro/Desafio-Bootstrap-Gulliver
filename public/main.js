@@ -35,40 +35,27 @@ if ('geolocation' in navigator) {
     const hospedagem_json = await response_hospedagem.json();
  
 
-
-
+    
     //Filtrar coordenadas da lista de hospedagens para adicionar marcadores
      var hospedagens = hospedagem_json.features;
-     console.log(hospedagens)
-      let nome_hosp;
-      let coordenadas_hotel;
+     console.log(hospedagens);
+      
+      var nome_hosp = L.geoJSON (hospedagens, {
+        onEachFeature: function (Feature, nome_hosp){
+         nome_hosp.bindPopup('<h2>'+ Feature.properties.name +'</h2>' + '</br>' + Feature.properties.address_line2);
+       
+         
 
-    
-     for (Feature of hospedagens) {
-        console.log(Feature.geometry.coordinates);
-        coordenadas_hotel = (Feature.geometry.coordinates)
-        nome_hosp = (Feature.properties.name);
-      }
-   
-      function novoIcone (hospedagens, coordenadas_hotel){
-        let icone_hotel = L.icon({
-          iconUrl : "img/hotel.svg",
-          iconSize:     [32, 37], // size of the icon;
+        }
         
-        }) 
-        return L.marker(coordenadas_hotel, { icon: icone_hotel})
-      }
-   
-      let myLayerOption = {
-        pointToLayer: novoIcone
-      }
- 
-     
+      }).addTo(map);
+    
+      // console.log(nome_hosp);
       //Adicionar Marcadores
-     L.geoJSON(hospedagens, myLayerOption).addTo(map).bindPopup(nome_hosp);
-    marker.setLatLng([lat, lon]).addTo(map).bindPopup("Localização Atual"); 
-    // marker.bindPopup(nome_hosp).addTo(map);
-    map.setView([lat,lon], 12);   
+    
+      marker.setLatLng([lat, lon]).addTo(map).bindPopup("Localização Atual"); 
+      // marker.bindPopup(nome_hosp).addTo(map);
+      map.setView([lat,lon], 12);  
 
   });
 
