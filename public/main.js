@@ -4,7 +4,7 @@ var map = L.map('mapa').setView([0,0], 3);
 var icone = L.icon({
   iconUrl : "img/marker.svg",
   
-  iconSize:     [32, 37], // size of the icon
+  iconSize:     [40, 45], // size of the icon
    
 })
  
