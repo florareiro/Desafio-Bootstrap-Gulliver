@@ -38,7 +38,7 @@ if ('geolocation' in navigator) {
     
     //Filtrar coordenadas da lista de hospedagens para adicionar marcadores
      var hospedagens = hospedagem_json.features;
-     console.log(hospedagens);
+    //  console.log(hospedagens);
       
       var nome_hosp = L.geoJSON (hospedagens, {
         onEachFeature: function (Feature, nome_hosp){
