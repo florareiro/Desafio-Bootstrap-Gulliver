@@ -36,7 +36,7 @@ if ('geolocation' in navigator) {
    
     // API CLIMA
     const API_key = '1e37be63938b4de6be125501220709';
-   const api_url = `http://api.weatherapi.com/v1/current.json?key=${API_key}&q=${lat},${lon}&aqi=no&lo`;
+   const api_url = `http://api.weatherapi.com/v1/current.json?&lang=pt_br&key=${API_key}&q=${lat},${lon}&aqi=no&lo`;
     const response = await fetch(api_url);
     const json = await response.json();
     console.log(json);
