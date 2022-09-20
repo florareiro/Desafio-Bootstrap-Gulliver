@@ -9,5 +9,6 @@ a API foi implementada na sessão Diário de Bordo da página inicial.
 
 VISUALIZAR PÁGINA:https://florareiro.github.io/Desafio-Gulliver/
 
+DEPLOY API: https://gulliver-diario-de-bordo.herokuapp.com/
 
 protótipo figma https://www.figma.com/file/w81HT6amjxgDybJ9fwnznw/Gulliver-Traveller?node-id=102%3A8
