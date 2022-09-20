@@ -1,8 +1,22 @@
-#mapa {
-    height: 380px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-p {
-    padding: 10px;
-    background-color: aquamarine;
+
+
+#mapa {
+    height: 400px;
+    margin: 0 20px 20px;
+}
+
+.titulo {
+  
+  margin: 40px auto 20px;
+}
+
+#cidade, #regiao {
+  font-weight: bold;
+  
 }

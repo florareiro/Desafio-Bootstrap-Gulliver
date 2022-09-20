@@ -9,23 +9,150 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
     integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
     crossorigin=""/>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
     integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
     crossorigin=""></script>
     <title>API Hospedagem</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./home.css">
 </head>
 <body>
-    <h1>Hospedagens</h1>
+    <!-- <h1>Hospedagens</h1> -->
     <!-- <div><a href="/"> Pesquisar</a> | <a href="./logs/index.html"> Histórico</a></div> -->
-   
+    
+    <nav class="navbar navbar-expand-lg navbar-light  minha-nav ">
+        <div class=" menu-hamburguer">
+          <button
+            class="navbar-toggler col-sm-12 col-md-12"
+            type="button"
+            data-toggle="collapse"
+            data-target="#conteudoNavbarSuportado"
+            aria-controls="conteudoNavbarSuportado"
+            aria-expanded="false"
+            aria-label="Alterna navegação"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div> 
+        <div class="caixa">
+          <div>
+          <img src="../imagens/logo.png" class="imagem-logo" alt="">
+          </div>
+          <a class="navbar-brand titulo-logo" href="https://florareiro.github.io/Desafio-Gulliver/"> Guliver <br>Traveller</br></a>
+        </div> 
+     
+        <div class="idioma"> 
+            <li class="nav-item dropdown">
+              <div class="borda">
+              <img src="../imagens/Globe.png" class="globo" alt="">
+              <a
+                class="nav-link dropdown-toggle "
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                pt-br
+              </a>
+            
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Inglês</a>
+                <a class="dropdown-item" href="#">Espanhol</a>
+              </div>
+            </li>
+         </div>
+  
+         <div class="collapse navbar-collapse menu-nav" id="conteudoNavbarSuportado"> 
+          <ul class="navbar-nav ">
+              <li class="nav-item active">
+              <a class="nav-link" href="#"S
+                >Dicas <span class="sr-only"></span></a
+              >
+              </li>
+              <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Roteiros <span class="sr-only">)</span></a
+              >
+              </li>
+              <li class="nav-item active">
+              <a class="nav-link" href="https://gulliver-diario-de-bordo.herokuapp.com/"
+                >Diário de Bordo <span class="sr-only"></span></a
+              >
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+      </nav>
+      <!-- FIM BARRA DE NAVEGAÇÃO -->
+    <div class="nav-bar">
+      
+        <ul class="lista-servico row">
+            <li class="item-lista"> <a class="link-lista" col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3" href="#"> <img src="./imagens/America.png"  class="icone" alt=""> Destino </a></li>
+            <li class="item-lista item-hosp"> <a class="link-lista" col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3" href="#"> <img src="./imagens/Bed.png"  class="icone" alt=""> Hospedagem </a></li>
+            <li class="item-lista"> <a class="link-lista" col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3" href="#"> <img src="./imagens/Airplane Mode On.png"  class="icone" alt=""> Passagens </a></li>
+            <li class="item-lista"> <a class="link-lista" col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3" href="#"> <img src="./imagens/Car.png"  class="icone" alt=""> Alugue seu carro </a></li>
+            <li class="item-lista item-2 dropdown dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="link-lista col-12 col-sm-12 col-md-12 col-lg-4 col-xl-3" href="#"> mais </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Alguma ação</a>
+                <a class="dropdown-item" href="#">Outra ação</a>
+                <a class="dropdown-item" href="#">Alguma coisa aqui</a>
+              </div>
+            </li>
+           
+        </ul>
+</div>
 
+    <div class="titulo">
+        <h2 class="hospedagem-nome">
+            Hospedagens Disponiveis em: <span id="cidade"></span> - <span id="regiao"></span>
+
+        </h2>
+    </div>
   
       <div id="mapa"></div>
 
+
+      <footer>
+        <div class="rodape">
+              <div class="logo-rodape">
+                  <img src="./imagens/logo-footer.svg" class="icon-footer"     alt="">
+                  <h3 class="icon-footer">Gulliver Traveller</h3>
+              </div>
+              <div class="redes-socias">
+                  <img src="./imagens/Twitter.png"  class="icon-footer"  alt="">
+                  <img src="./imagens/Instagram.png"  class="icon-footer" alt="">
+                  <img src="./imagens/Facebook.png" class="icon-footer"  alt="">
+            </div>
+        </div> 
+    </footer>
       <script src="./main.js"> </script>
       
-    
+      <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
 
 </body>
 </html>
