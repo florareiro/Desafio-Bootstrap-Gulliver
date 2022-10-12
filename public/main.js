@@ -35,13 +35,13 @@ if ('geolocation' in navigator) {
 
    
     // API CLIMA
-    const API_key = '1e37be63938b4de6be125501220709';
-   const api_url = `http://api.weatherapi.com/v1/current.json?&lang=pt_br&key=${API_key}&q=${lat},${lon}&aqi=no&lo`;
+    const API_key = '32ae98f7cb98e2b734b003cea7eb0273';
+   const api_url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_key}`;
     const response = await fetch(api_url);
     const json = await response.json();
-    console.log(json);
-    document.getElementById('cidade').textContent = json.location.name;
-    document.getElementById('regiao').textContent = json.location.region;
+    // console.log(json);
+    document.getElementById('cidade').textContent = json.name;
+    // document.getElementById('regiao').textContent = json.location.region;
     // document.getElementById('temperatura').textContent = json.current.temp_c;
 
 
