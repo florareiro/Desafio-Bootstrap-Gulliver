@@ -1,8 +1,18 @@
 #mapa {
     height: 380px;
 }
-
-p{
-    padding: 10px;
-    background-color: aquamarine;
+.api-h1 {
+    margin: 30px 0 0  ;
+}
+.api {
+    
+    text-align: center;
+    justify-content: space-between;
+}
+.api-link{
+    font-size: 22px;
+}
+.api-input{
+    margin: 0 auto ;
+    width: 500px;
 }
