@@ -4,6 +4,9 @@
 .api-h1 {
     margin: 30px 0 0  ;
 }
+.p{
+    font-size: 25px;
+}
 .api {
     
     text-align: center;
@@ -15,4 +18,13 @@
 .api-input{
     margin: 0 auto ;
     width: 500px;
+}
+
+#diario {
+    color: #0A5C01;
+}
+
+#cidade {
+    font-size: 26px;
+    font-weight: 700;
 }
