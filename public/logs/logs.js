@@ -9,8 +9,8 @@ async function getData() {
         const date = document.createElement('div');
         
 
-        geo.textContent = `latitude: ${item.lat}, longitude: ${item.lon}`;
-        mood.textContent = `nome: ${item.mood}`;
+        geo.textContent = `Localização: ${item.cidade}`;
+        mood.textContent = `Anotações: ${item.mood}`;
         date.textContent = new Date (item.timestamp).toLocaleDateString();
 
         root.append(geo, mood, date);
