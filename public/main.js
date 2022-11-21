@@ -1,29 +1,24 @@
 //json com dados do cliente
 
-function setup() {
-  noCanvas();
-  const video = createCapture(VIDEO);
-  video.size(320, 120);
-  let cidade;
-  const button = document.getElementById("submit");
-  button.addEventListener("click", async (event) => {
-    const mood = document.getElementById("mood").value;
-    const cidade = document.getElementById("cidade").textContent;
-    video.loadPixels();
-    const image64 = video.canvas.toDataURL();
-    const data = { mood, cidade, image64 };
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    };
-    const response = await fetch("/api", options);
-    const json = await response.json();
-    console.log(json);
-  });
-}
+let cidade;
+const button = document.getElementById("submit");
+button.addEventListener("click", async (event) => {
+  const mood = document.getElementById("mood").value;
+  const cidade = document.getElementById("cidade").textContent;
+
+  const data = { mood, cidade };
+  const options = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  };
+  const response = await fetch("/api", options);
+  const json = await response.json();
+  console.log(json);
+});
+
 //INICIANDO O MAPA
 const map = L.map("mapa").setView([0, 0], 3);
 
