@@ -31,6 +31,8 @@
 
 
     <title>Gulliver | Diário de Bordo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
     <link rel="stylesheet" href="map.css">
 </head>
 <body>
@@ -117,13 +119,16 @@
 
 <!-- DIARIO DE BORDO  -->
     <h1 class="api api-h1">Meu Diário de Bordo</h1>
+    <div>
+    <span id="img"></span>
+  </div>
     <div class="api"><a class=" api api-link" href="/">   Localização Atual    </a>
       <p class="api p">
       <span  id="cidade"></span><br>
   
         
       </p>
-    
+      
       <label for="mood"> Anotações </label>
       <input class="form-control form-control-lg api-input api" id="mood"  />
       <button id="submit" class="btn btn-dark m-4"> enviar </button>
